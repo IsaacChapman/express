@@ -28,4 +28,4 @@ cache:
     - HOME/.yarn
 
 tests:
-  - yarn run-script test-ci
+  - yarn run test-ci
