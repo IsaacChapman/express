@@ -23,9 +23,10 @@ hooks:
 cache:
   key_paths:
     - package.json
+    #- yarn.lock  # to freeze packages installed by yarn
   save_paths:
-    - REPO/node_modules
-    - HOME/.yarn
+    - REPO/node_modules  # Repo's "local" cache
+    - HOME/.yarn         # Yarn's "global" cache
 
 tests:
   - yarn run test-ci
